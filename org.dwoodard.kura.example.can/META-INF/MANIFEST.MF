@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: org.dwoodard.kura.example.can
+Bundle-SymbolicName: org.dwoodard.kura.example.can
+Bundle-Version: 1.0.0.qualifier
+Service-Component: OSGI-INF/canExample.xml
+Import-Package: org.eclipse.kura;version="[1.0,2.0)",
+ org.eclipse.kura.protocol.can,
+ org.slf4j;version="1.7.21"
