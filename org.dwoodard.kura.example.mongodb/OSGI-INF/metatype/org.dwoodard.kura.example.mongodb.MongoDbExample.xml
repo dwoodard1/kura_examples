@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+    Copyright (c) 2011, 2016 Eurotech and/or its affiliates, and others
+
+     All rights reserved. This program and the accompanying materials
+     are made available under the terms of the Eclipse Public License v1.0
+     which accompanies this distribution, and is available at
+     http://www.eclipse.org/legal/epl-v10.html
+
+    Contributors:
+      Eurotech
+      Benjamin Cabé <benjamin@eclipse.org>
+
+-->
+<MetaData xmlns="http://www.osgi.org/xmlns/metatype/v1.2.0" localization="en_us">
+    <OCD id="org.dwoodard.kura.example.mongodb.MongoDbExample" 
+         name="MongoDB Example" 
+         description="MongoDB Example">
+                
+        <AD id="host"  
+            name="host"
+            type="String"
+            cardinality="0"
+            required="true"
+            default="host" 
+            description="Host of MongoDB instance."/>
+
+        <AD id="user"
+            name="user"
+            type="String"
+            cardinality="0"
+            required="true"
+            default="user" 
+            description="MongoDB user."/>
+            
+        <AD id="password"  
+            name="password"
+            type="Password"
+            cardinality="0" 
+            required="true"
+            default="password" 
+            description="MongoDB password."/>
+        
+        <AD id="dbName"  
+            name="dbName"
+            type="String"
+            cardinality="0"
+            required="true"
+            default="dbName" 
+            description="Name of DB."/>
+            
+        </OCD>
+    <Designate pid = "org.dwoodard.kura.example.mongodb.MongoDbExample">
+        <Object ocdref="org.dwoodard.kura.example.mongodb.MongoDbExample"/>
+    </Designate>
+</MetaData>
