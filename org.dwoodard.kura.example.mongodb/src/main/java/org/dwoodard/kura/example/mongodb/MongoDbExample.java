@@ -54,7 +54,6 @@ public class MongoDbExample implements ConfigurableComponent {
 		try {
 			password = new Password(
 					this.cryptoService.decryptAes(((String) properties.get("password")).toCharArray()));
-			logger.info(password.toString());
 		} catch (KuraException e) {
 			logger.error("Error: " + e.getLocalizedMessage());
 		}
