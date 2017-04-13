@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0"
+	activate="activate"
+	deactivate="deactivate" 
+	enabled="true"
+	immediate="true"
+	name="org.dwoodard.kura.example.swing.SwingExampl">
+
+   <implementation class="org.dwoodard.kura.example.swing.SwingExample"/>
+</scr:component>

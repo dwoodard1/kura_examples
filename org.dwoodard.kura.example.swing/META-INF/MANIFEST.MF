@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: org.dwoodard.kura.example.swing
+Bundle-SymbolicName: org.dwoodard.kura.example.swing;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Import-Package: org.slf4j
+Service-Component: OSGI-INF/swingExample.xml
+Bundle-ActivationPolicy: lazy
