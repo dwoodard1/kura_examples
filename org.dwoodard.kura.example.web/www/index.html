@@ -1,0 +1,19 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("button").click(function(){
+        $.ajax({url: "/web/getInfo/status", success: function(result){
+            $("#testDiv").html(result);
+        }});
+    });
+});
+</script>
+</head>
+<body>
+	<p>Press button to get info:</p>
+	<button>Get Info</button>
+	<div id="testDiv"></div>
+</body>
+</html>
