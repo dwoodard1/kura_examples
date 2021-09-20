@@ -3,17 +3,28 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script>
 $(document).ready(function(){
-    $("button").click(function(){
+    $("#testButton").click(function(){
         $.ajax({url: "/web/getInfo/status", success: function(result){
             $("#testDiv").html(result);
+        }});
+    });
+    
+    $("#assetsButton").click(function(){
+        $.ajax({url: "/services/assets", success: function(result){
+            $("#assetsDiv").html(result);
         }});
     });
 });
 </script>
 </head>
-<body>
-	<p>Press button to get info:</p>
-	<button>Get Info</button>
-	<div id="testDiv"></div>
+<body style="padding: 20px; border: 1px solid; ">
+	<div>
+		<p>Press button to get info:</p>
+		<button id="testButton">Get Info</button>
+		<div id="testDiv"></div>
+		<p>Press button to get asset info:</p>
+		<button id="assetsButton">Get Assets</button>
+		<div id="assetsDiv"></div>
+	</div>
 </body>
 </html>
